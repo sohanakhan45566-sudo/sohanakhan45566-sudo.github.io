@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sohana Akbar | DevOps & Frontend Developer</title>
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-    
+
     <style>
         /* ============================================================
-                   CSS VARIABLES (Light & Dark Themes)
-                   ============================================================ */
+               CSS VARIABLES (Light & Dark Themes)
+               ============================================================ */
         :root {
             --bg-primary: #f8f9fa;
             --bg-secondary: #ffffff;
@@ -55,8 +55,8 @@
         }
 
         /* ============================================================
-                   RESET & BASE
-                   ============================================================ */
+               RESET & BASE
+               ============================================================ */
         * {
             margin: 0;
             padding: 0;
@@ -81,8 +81,8 @@
         }
 
         /* ============================================================
-                   FLOATING SOCIAL SIDEBAR
-                   ============================================================ */
+               FLOATING SOCIAL SIDEBAR
+               ============================================================ */
         .social-sidebar {
             position: fixed;
             left: 20px;
@@ -136,8 +136,8 @@
         }
 
         /* ============================================================
-                   THEME TOGGLE
-                   ============================================================ */
+               THEME TOGGLE
+               ============================================================ */
         .theme-toggle {
             position: fixed;
             right: 25px;
@@ -168,8 +168,8 @@
         }
 
         /* ============================================================
-                   HERO / PARTICLES CONTAINER
-                   ============================================================ */
+               HERO / PARTICLES CONTAINER
+               ============================================================ */
         #particles-canvas {
             position: absolute;
             top: 0;
@@ -281,8 +281,8 @@
         }
 
         /* ============================================================
-                   STATS
-                   ============================================================ */
+               STATS
+               ============================================================ */
         .stats {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -320,8 +320,8 @@
         }
 
         /* ============================================================
-                   CONTAINER & SECTIONS
-                   ============================================================ */
+               CONTAINER & SECTIONS
+               ============================================================ */
         .container {
             max-width: 1140px;
             margin: 0 auto;
@@ -397,8 +397,8 @@
         }
 
         /* ============================================================
-                   ABOUT
-                   ============================================================ */
+               ABOUT
+               ============================================================ */
         .about-grid {
             display: grid;
             grid-template-columns: 2fr 1fr;
@@ -446,8 +446,8 @@
         }
 
         /* ============================================================
-                   SKILLS
-                   ============================================================ */
+               SKILLS
+               ============================================================ */
         .skills-category {
             margin-bottom: 25px;
         }
@@ -499,8 +499,8 @@
         }
 
         /* ============================================================
-                   PROJECTS
-                   ============================================================ */
+               PROJECTS
+               ============================================================ */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -583,8 +583,8 @@
         }
 
         /* ============================================================
-                   TIMELINE (Experience)
-                   ============================================================ */
+               TIMELINE (Experience)
+               ============================================================ */
         .timeline {
             position: relative;
             padding-left: 30px;
@@ -658,8 +658,8 @@
         }
 
         /* ============================================================
-                   CERTIFICATIONS
-                   ============================================================ */
+               CERTIFICATIONS
+               ============================================================ */
         .cert-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -698,8 +698,8 @@
         }
 
         /* ============================================================
-                   CONTACT FORM
-                   ============================================================ */
+               CONTACT FORM
+               ============================================================ */
         .contact-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -782,8 +782,8 @@
         }
 
         /* ============================================================
-                   FOOTER
-                   ============================================================ */
+               FOOTER
+               ============================================================ */
         footer {
             text-align: center;
             padding: 30px 0 15px;
@@ -810,48 +810,173 @@
         }
 
         /* ============================================================
-                   RESPONSIVE
-                   ============================================================ */
-        @media (max-width: 992px) {
-            .about-grid {
-                grid-template-columns: 1fr;
-            }
+               RESPONSIVE DESIGN
+               ============================================================ */
 
-            .contact-grid {
-                grid-template-columns: 1fr;
+        /* Tablet & Small Laptop */
+        @media (max-width: 1024px) {
+            .projects-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
-
             .hero h1 {
-                font-size: 2.8rem;
+                font-size: 3rem;
             }
-
             .hero .subtitle {
                 font-size: 1.3rem;
             }
         }
 
+        /* Mobile (Phones) */
         @media (max-width: 768px) {
             .hero {
-                padding: 50px 30px;
-                margin: 10px 10px 30px;
+                padding: 40px 20px;
+                margin: 10px;
                 min-height: auto;
+                border-radius: 16px;
             }
 
             .hero h1 {
                 font-size: 2.2rem;
             }
 
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .hero .badge-row .badge {
+                font-size: 0.7rem;
+                padding: 4px 12px;
+            }
+
+            .hero .hero-btns .btn {
+                padding: 10px 20px;
+                font-size: 0.85rem;
+            }
+
             .stats {
-                margin: -20px 15px 30px;
                 grid-template-columns: repeat(2, 1fr);
+                margin: -15px 10px 20px;
+                gap: 12px;
+            }
+
+            .stat-item {
+                padding: 15px 10px;
+            }
+
+            .stat-item .number {
+                font-size: 1.8rem;
+            }
+
+            .stat-item .label {
+                font-size: 0.7rem;
             }
 
             .container {
-                padding: 0 15px 30px;
+                padding: 0 10px 20px;
             }
 
             .section {
-                padding: 25px 20px;
+                padding: 20px 15px;
+                margin-bottom: 20px;
+                border-radius: 14px;
+            }
+
+            .section h2 {
+                font-size: 1.3rem;
+                gap: 10px;
+            }
+
+            .section h2::after {
+                display: none;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .about-text p {
+                font-size: 0.95rem;
+            }
+
+            .about-quick {
+                padding: 15px;
+            }
+
+            .about-quick .item {
+                font-size: 0.85rem;
+                padding: 8px 0;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .project-card {
+                padding: 18px;
+            }
+
+            .project-card h3 {
+                font-size: 1rem;
+            }
+
+            .project-card p {
+                font-size: 0.85rem;
+            }
+
+            .project-card .tech-stack span {
+                font-size: 0.65rem;
+                padding: 2px 10px;
+            }
+
+            .cert-grid {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .cert-item {
+                padding: 14px 16px;
+            }
+
+            .cert-item .cert-icon {
+                font-size: 1.5rem;
+            }
+
+            .cert-item .cert-info .name {
+                font-size: 0.85rem;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .contact-info-item {
+                padding: 10px 0;
+            }
+
+            .contact-info-item i {
+                width: 38px;
+                height: 38px;
+                font-size: 1.1rem;
+            }
+
+            .contact-info-item .text {
+                font-size: 0.9rem;
+            }
+
+            .contact-form input,
+            .contact-form textarea {
+                padding: 12px 14px;
+                font-size: 0.9rem;
+            }
+
+            .contact-form .btn-submit {
+                padding: 12px 30px;
+                font-size: 0.9rem;
+                width: 100%;
+                justify-content: center;
             }
 
             .social-sidebar {
@@ -859,9 +984,9 @@
             }
 
             .theme-toggle {
-                right: 15px;
-                top: 15px;
-                padding: 8px 14px;
+                top: 10px;
+                right: 10px;
+                padding: 6px 12px;
                 font-size: 1rem;
             }
 
@@ -869,12 +994,36 @@
                 display: none;
             }
 
-            .projects-grid {
-                grid-template-columns: 1fr;
+            .timeline {
+                padding-left: 15px;
             }
 
-            .cert-grid {
-                grid-template-columns: 1fr;
+            .timeline-item {
+                padding-left: 15px;
+                margin-bottom: 20px;
+            }
+
+            .timeline-item::before {
+                left: -16px;
+                width: 10px;
+                height: 10px;
+            }
+
+            .timeline::before {
+                left: -4px;
+            }
+
+            .timeline-item .date {
+                font-size: 0.7rem;
+            }
+
+            .timeline-item h3 {
+                font-size: 0.95rem;
+            }
+
+            .timeline-item ul li {
+                font-size: 0.85rem;
+                padding: 3px 0 3px 16px;
             }
 
             .skill-bar-wrap {
@@ -886,25 +1035,42 @@
                 width: 100%;
                 font-size: 0.85rem;
             }
+
+            .skill-bar-wrap .skill-pct {
+                font-size: 0.75rem;
+            }
+
+            footer {
+                font-size: 0.75rem;
+                padding: 20px 0 10px;
+            }
+
+            .skills-category h3 {
+                font-size: 0.9rem;
+            }
         }
 
-        @media (max-width: 480px) {
+        /* Very Small Phones */
+        @media (max-width: 400px) {
             .hero h1 {
                 font-size: 1.8rem;
             }
 
-            .hero .badge-row .badge {
-                font-size: 0.7rem;
-                padding: 4px 12px;
-            }
-
             .hero .hero-btns .btn {
-                padding: 10px 24px;
-                font-size: 0.85rem;
+                padding: 8px 16px;
+                font-size: 0.75rem;
             }
 
             .stat-item .number {
-                font-size: 1.8rem;
+                font-size: 1.4rem;
+            }
+
+            .section {
+                padding: 15px 12px;
+            }
+
+            .section h2 {
+                font-size: 1.1rem;
             }
         }
     </style>
@@ -978,11 +1144,11 @@
     ============================================================ -->
     <div class="stats">
         <div class="stat-item">
-            <div class="number" data-count="4">0</div>
+            <div class="number" data-count="9">0</div>
             <div class="label">Projects Completed</div>
         </div>
         <div class="stat-item">
-            <div class="number" data-count="3">0</div>
+            <div class="number" data-count="5">0</div>
             <div class="label">Certifications</div>
         </div>
         <div class="stat-item">
@@ -1034,7 +1200,7 @@
                     </div>
                     <div class="item">
                         <span class="key">📜 Certifications</span>
-                        <span class="value">Python, K8s, Docker</span>
+                        <span class="value">Python, K8s, Docker, AWS, Linux</span>
                     </div>
                 </div>
             </div>
@@ -1050,6 +1216,7 @@
                 <div class="skill-bar-wrap"><span class="skill-name">Kubernetes</span><div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div><span class="skill-pct">80%</span></div>
                 <div class="skill-bar-wrap"><span class="skill-name">CI/CD (GitHub Actions)</span><div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div><span class="skill-pct">85%</span></div>
                 <div class="skill-bar-wrap"><span class="skill-name">Linux &amp; Bash</span><div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div><span class="skill-pct">80%</span></div>
+                <div class="skill-bar-wrap"><span class="skill-name">AWS</span><div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div><span class="skill-pct">70%</span></div>
             </div>
 
             <div class="skills-category">
@@ -1099,6 +1266,7 @@
             <h2><i class="fas fa-folder-open"></i> Projects</h2>
             <div class="projects-grid">
 
+                <!-- Project 1: URL Shortener -->
                 <div class="project-card">
                     <h3>🔗 URL Shortener Service</h3>
                     <div class="tech-stack">
@@ -1110,6 +1278,7 @@
                     </a>
                 </div>
 
+                <!-- Project 2: User CRUD API -->
                 <div class="project-card">
                     <h3>📋 User CRUD API</h3>
                     <div class="tech-stack">
@@ -1121,8 +1290,9 @@
                     </a>
                 </div>
 
+                <!-- Project 3: Docker Containerization -->
                 <div class="project-card">
-                    <h3>🐳 Docker Containerization (Task 4)</h3>
+                    <h3>🐳 Docker Containerization</h3>
                     <div class="tech-stack">
                         <span>Docker</span><span>Nginx</span><span>CI/CD</span>
                     </div>
@@ -1132,13 +1302,74 @@
                     </a>
                 </div>
 
+                <!-- Project 4: Java App with CI/CD -->
                 <div class="project-card">
-                    <h3>☕ Java App with Gradle &amp; CI/CD (Task 3)</h3>
+                    <h3>☕ Java App with CI/CD</h3>
                     <div class="tech-stack">
                         <span>Java 17</span><span>Gradle</span><span>JUnit 5</span><span>GitHub Actions</span>
                     </div>
                     <p>Automated CI/CD pipeline with 100% passing unit tests and continuous delivery via GitHub Actions.</p>
                     <a href="https://github.com/sohanakhan45566-sudo/CodeAlpha-Task3" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Project 5: Binance Trading Bot -->
+                <div class="project-card">
+                    <h3>💰 Binance Futures Trading Bot</h3>
+                    <div class="tech-stack">
+                        <span>Python</span><span>Binance API</span><span>CLI</span>
+                    </div>
+                    <p>Professional trading bot for Binance Futures Testnet with MARKET, LIMIT, and STOP-LIMIT orders. Built with clean architecture, comprehensive logging, and robust error handling.</p>
+                    <a href="https://github.com/sohanakhan45566-sudo/binance-futures-trading-bot" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Project 6: BMI / Age Calculator -->
+                <div class="project-card">
+                    <h3>📊 BMI / Age Calculator</h3>
+                    <div class="tech-stack">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                    <p>Interactive web tool to calculate Body Mass Index and age-based health metrics. Clean UI with real-time results.</p>
+                    <a href="https://sohanakhan45566-sudo.github.io/bmi-age-calculator" target="_blank" class="project-link">
+                        <i class="fas fa-globe"></i> Live Demo <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Project 7: Black Glass Calculator -->
+                <div class="project-card">
+                    <h3>🔲 Black Glass Calculator</h3>
+                    <div class="tech-stack">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                    <p>Elegant, glass-morphism calculator with smooth animations and responsive design. Perfect for modern UI inspiration.</p>
+                    <a href="https://sohanakhan45566-sudo.github.io/Black-Glass-Calculator" target="_blank" class="project-link">
+                        <i class="fas fa-globe"></i> Live Demo <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Project 8: Nexus 3D Shopping -->
+                <div class="project-card">
+                    <h3>🛍️ Nexus 3D Shopping</h3>
+                    <div class="tech-stack">
+                        <span>HTML</span><span>CSS</span><span>3D</span><span>JavaScript</span>
+                    </div>
+                    <p>Immersive 3D e-commerce experience with product visualization. Rotate, zoom, and interact with virtual products in a futuristic shopping environment.</p>
+                    <a href="https://sohanakhan45566-sudo.github.io/nexus3d/" target="_blank" class="project-link">
+                        <i class="fas fa-globe"></i> Live Demo <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Project 9: My DevOps Project -->
+                <div class="project-card">
+                    <h3>⚙️ My DevOps Project</h3>
+                    <div class="tech-stack">
+                        <span>DevOps</span><span>Automation</span>
+                    </div>
+                    <p>Comprehensive DevOps project demonstrating CI/CD pipelines, infrastructure automation, and cloud deployment strategies.</p>
+                    <a href="https://github.com/sohanakhan45566-sudo/my-devops-project" target="_blank" class="project-link">
                         <i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -1169,6 +1400,20 @@
                     <div class="cert-info">
                         <div class="name">Computer Science (CS50)</div>
                         <div class="meta">Harvard University · 2025–2026</div>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-icon"><i class="fab fa-aws"></i></div>
+                    <div class="cert-info">
+                        <div class="name">AWS Basics</div>
+                        <div class="meta">KodeKloud · July 2026</div>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-icon"><i class="fab fa-linux"></i></div>
+                    <div class="cert-info">
+                        <div class="name">Linux For Absolute Beginners</div>
+                        <div class="meta">KodeKloud · July 2026</div>
                     </div>
                 </div>
             </div>
@@ -1241,7 +1486,7 @@
     <footer>
         <p>© 2026 Sohana Akbar. Built with <span class="heart">❤</span> and lots of ☕</p>
         <p style="font-size: 0.8rem; margin-top: 5px;">
-            <i class="fas fa-code"></i> DevOps · Docker · Kubernetes · CI/CD
+            <i class="fas fa-code"></i> DevOps · Docker · Kubernetes · CI/CD · AWS
         </p>
     </footer>
 
